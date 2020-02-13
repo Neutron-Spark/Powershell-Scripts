@@ -5,7 +5,7 @@
 # Purpose: This polls all of the powered off Virtual Machines on a VMWare cluster and find their power off time (if stored in the VSphere log) and compiles it into a report
 # Notes: Although this gets the power off time for some machines, others are more difficult due to the nature of the way individual VM logs are stored.
 # Requirements: An AD Account with Admin permissions for the VSphere cluster
-# How to use: OldVMsOnVMWare.ps1 -Server ssplevvc02.silversands.co.uk -Output C:\SomeOtherLocation
+# How to use: OldVMsOnVMWare.ps1 -Server VSPHERE_SERVER_ADDRESS -Output C:\SomeOtherLocation
 
 param (
     [Parameter(Mandatory=$true)][string]$Server,
